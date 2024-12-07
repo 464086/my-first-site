@@ -10,21 +10,20 @@
 }
 
 body {
-    background: #f0f7f4; /* Soft mint green background */
+    background: #c8e6c9;
 }
 
 .header {
-    background: linear-gradient(135deg, #2c3e50, #3498db);
+    background: #24292e;
     color: white;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .project-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .tabs-container {
@@ -41,38 +40,39 @@ body {
 }
 
 .tab-button {
-    background: #e3edf7; /* Soft blue for inactive tabs */
+    background: #1a237e;
+    color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
+    padding: 10px 18px; /* Slightly smaller padding */
+    border-radius: 5px;
     cursor: pointer;
     flex: 1;
-    min-width: 150px;
-    font-size: 1rem;
+    min-width: 140px; /* Slightly smaller min-width */
+    font-size: 0.95rem; /* Slightly smaller font */
     transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-    color: #2c3e50;
+    box-shadow: 0 0 8px rgba(255,255,255,0.6); /* White glow for inactive tabs */
 }
 
 .tab-button:hover {
-    background: #d1e3f6;
+    opacity: 0.9;
     transform: translateY(-2px);
 }
 
 .tab-button.active {
-    background: linear-gradient(135deg, #34495e, #2980b9);
+    background: #ff5252;
     color: white;
+    box-shadow: 0 0 15px #ffeb3b; /* Yellow glow for active tab */
+    font-size: 1rem; /* Keep original size for active tab */
+    padding: 12px 20px; /* Keep original padding for active tab */
 }
 
 .tab-content {
-    background: #ffffff; /* Clean white for content */
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    background: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     min-height: 300px;
     display: none;
-    line-height: 1.6;
-    color: #2c3e50;
 }
 
 .tab-content.active {
@@ -81,8 +81,8 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Responsive Design */
