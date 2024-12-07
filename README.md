@@ -1,6 +1,6 @@
 <html><head><base href="/" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Мой проект</title>
+<title>Мой проект в разработке</title>
 <style>
 * {
     margin: 0;
