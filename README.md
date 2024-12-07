@@ -40,17 +40,17 @@ body {
 }
 
 .tab-button {
-    background: #1a237e;
+    background: #1a237e; /* Changed to dark blue color */
     color: white;
     border: none;
-    padding: 10px 18px; /* Slightly smaller padding */
+    padding: 12px 20px;
     border-radius: 5px;
     cursor: pointer;
     flex: 1;
-    min-width: 140px; /* Slightly smaller min-width */
-    font-size: 0.95rem; /* Slightly smaller font */
+    min-width: 150px;
+    font-size: 1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 0 8px rgba(255,255,255,0.6); /* White glow for inactive tabs */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .tab-button:hover {
@@ -61,9 +61,7 @@ body {
 .tab-button.active {
     background: #ff5252;
     color: white;
-    box-shadow: 0 0 15px #ffeb3b; /* Yellow glow for active tab */
-    font-size: 1rem; /* Keep original size for active tab */
-    padding: 12px 20px; /* Keep original padding for active tab */
+    box-shadow: 0 0 15px #ffeb3b; /* Added yellow glow effect */
 }
 
 .tab-content {
