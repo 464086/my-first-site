@@ -10,20 +10,21 @@
 }
 
 body {
-    background: #e8f5e9; /* Changed to light green */
+    background: #f0f7f4; /* Soft mint green background */
 }
 
 .header {
-    background: #24292e;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
     color: white;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .project-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .tabs-container {
@@ -40,35 +41,38 @@ body {
 }
 
 .tab-button {
-    background: #fff8dc; /* Changed to light yellow for inactive tabs */
+    background: #e3edf7; /* Soft blue for inactive tabs */
     border: none;
     padding: 12px 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     flex: 1;
     min-width: 150px;
     font-size: 1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    color: #2c3e50;
 }
 
 .tab-button:hover {
-    background: #fff5c3;
+    background: #d1e3f6;
     transform: translateY(-2px);
 }
 
 .tab-button.active {
-    background: #2ea44f;
+    background: linear-gradient(135deg, #34495e, #2980b9);
     color: white;
 }
 
 .tab-content {
-    background: #e6f2ff; /* Changed to light blue */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #ffffff; /* Clean white for content */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     min-height: 300px;
     display: none;
+    line-height: 1.6;
+    color: #2c3e50;
 }
 
 .tab-content.active {
@@ -77,8 +81,8 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsive Design */
