@@ -106,12 +106,12 @@ body {
 </head>
 <body>
     <header class="header">
-        <h1 class="project-title">Мой проект</h1>
+        <h1 class="project-title">Астрологическая погода </h1>
     </header>
 
     <div class="tabs-container">
         <div class="tabs">
-            <button class="tab-button active" data-tab="tab1">Главная</button>
+            <button class="tab-button active" data-tab="tab1">Сегодня на небе</button>
             <button class="tab-button" data-tab="tab2">О проекте</button>
             <button class="tab-button" data-tab="tab3">Документация</button>
             <button class="tab-button" data-tab="tab4">Галерея</button>
