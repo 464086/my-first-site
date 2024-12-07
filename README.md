@@ -10,7 +10,7 @@
 }
 
 body {
-    background: #e6f2ff; /* Changed to light blue */
+    background: #e8f5e9; /* Changed to light green */
 }
 
 .header {
@@ -40,7 +40,7 @@ body {
 }
 
 .tab-button {
-    background: #ffd700; /* Changed to yellow for inactive tabs */
+    background: #fff8dc; /* Changed to light yellow for inactive tabs */
     border: none;
     padding: 12px 20px;
     border-radius: 5px;
@@ -53,7 +53,7 @@ body {
 }
 
 .tab-button:hover {
-    background: #ffed4a;
+    background: #fff5c3;
     transform: translateY(-2px);
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .tab-content {
-    background: #e8f5e9; /* Changed to light green */
+    background: #e6f2ff; /* Changed to light blue */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
