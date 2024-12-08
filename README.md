@@ -1,4 +1,3 @@
-<base href="/my-first-site/">
 <html><head><base href="/" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Мой проект</title>
@@ -17,20 +16,23 @@ body {
 .header {
     background: #24292e;
     color: white;
-    padding: 1rem; /* Reduced from 2rem to 1rem */
+    padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .project-title {
     font-size: 2.5rem;
-    margin-bottom: 0.5rem; /* Reduced from 1rem to 0.5rem */
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tabs-container {
-    max-width: 1200px;
+    width: 100%;
     margin: 20px auto;
-    padding: 0 20px;
+    padding: 0;
 }
 
 .tabs {
@@ -38,6 +40,7 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+    padding: 0 20px;
 }
 
 .bottom-tabs {
@@ -73,10 +76,11 @@ body {
 .tab-content {
     background: #e3f2fd;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     min-height: 300px;
     display: none;
+    width: 100%;
 }
 
 .tab-content.active {
@@ -133,6 +137,33 @@ body {
         <div class="tab-content active" id="tab1">
             <h2>Добро пожаловать на главную страницу</h2>
             <p>Здесь размещается основная информация о проекте.</p>
+            <br>
+            <h3>Информация о размерах страницы:</h3>
+            <p>Теперь контентная область занимает всю ширину экрана (100%).</p>
+            <p>При этом:</p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>На всех размерах экрана контент занимает 100% доступной ширины</li>
+                <li>Кнопки вкладок имеют отступы по 20px с каждой стороны</li>
+                <li>Контент вкладок растягивается на всю ширину без боковых отступов</li>
+            </ul>
+            <p style="margin-top: 20px;">Заголовок "Мой проект" расположен в блоке header, который:</p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>Имеет темно-серый фон (#24292e)</li>
+                <li>Содержит отступы по 1rem (16px) сверху и снизу</li>
+                <li>Занимает всю ширину экрана</li>
+                <li>Имеет тень внизу для визуального отделения от контента</li>
+            </ul>
+            <p style="margin-top: 10px;">Сам текст заголовка:</p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>Теперь занимает всю доступную ширину (100%)</li>
+                <li>Центрируется внутри header с помощью margin: auto</li>
+                <li>Имеет размер шрифта:</li>
+                <ul style="margin-left: 20px; margin-top: 5px;">
+                    <li>2.5rem (40px) на больших экранах</li>
+                    <li>2rem (32px) на средних экранах</li>
+                    <li>1.5rem (24px) на мобильных устройствах</li>
+                </ul>
+            </ul>
         </div>
 
         <div class="tab-content" id="tab2">
@@ -211,18 +242,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove active class from all contents
             tabContents.forEach(content => content.classList.remove('active'));
-
-            // Add active class to corresponding content
             const tabId = button.getAttribute('data-tab');
             document.getElementById(tabId).classList.add('active');
-            
-            // Update all buttons (both top and bottom)
             updateAllButtons(tabId);
         });
 
-        // Add hover effect
         button.addEventListener('mouseover', () => {
             if (!button.classList.contains('active')) {
                 button.style.transform = 'translateY(-2px)';
