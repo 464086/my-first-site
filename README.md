@@ -112,7 +112,7 @@ body {
 </head>
 <body>
     <header class="header">
-        <h1 class="project-title">Мой проект - в разработке проверялка</h1>
+        <h1 class="project-title">ывенркнокеноеноеноеноеноеноеоыкапвп</h1>
     </header>
 
     <div class="tabs-container">
