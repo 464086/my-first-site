@@ -1,6 +1,6 @@
 <html><head><base href="/" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Мой проект - в разработке проверялка</title>
+<title>Мой проект</title>
 <style>
 * {
     margin: 0;
@@ -112,7 +112,7 @@ body {
 </head>
 <body>
     <header class="header">
-        <h1 class="project-title">Мой проект</h1>
+        <h1 class="project-title">Мой проект - в разработке проверялка</h1>
     </header>
 
     <div class="tabs-container">
