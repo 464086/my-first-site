@@ -1,3 +1,4 @@
+<base href="/my-first-site/">
 <html><head><base href="/" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Мой проект</title>
