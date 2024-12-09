@@ -136,7 +136,7 @@ body {
 
     <div class="tabs-container">
         <div class="tabs">
-            <button class="tab-button" data-tab="tab1">Главная</button>
+            <button class="tab-button" data-tab="tab1">9-16 декабря 2024</button>
             <button class="tab-button" data-tab="tab2">О проекте</button>
             <button class="tab-button" data-tab="tab3">Документация</button>
             <button class="tab-button" data-tab="tab4">Галерея</button>
