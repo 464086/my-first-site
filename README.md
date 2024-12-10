@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    background: #24292e;
+    background: #c8e6c9;
     color: white;
     padding: 0.25rem; /* Changed from 0.5rem to 0.25rem */
     text-align: center;
